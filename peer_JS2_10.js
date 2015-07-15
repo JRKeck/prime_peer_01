@@ -47,8 +47,7 @@ value = value + "95";  //"6795"
 var array = []
 
 for (var i = 0; i < value.length; i++) {
-	var y = value[i].charAt();  //["6","7","9","5"]
-	array.push(y);
+	array[i] = value.charAt(i);  //["6","7","9","5"]
 };
 array.shift();
 array.pop(); //[7","9"]
@@ -61,7 +60,7 @@ for (var i = array.length-1; i >= 0; i--) {
 x = parseInt(x); // 97
 value = parseInt(value); //79
 
-value = value + x; //12771
+value += x; //12771
 
 if (value > 3271) {
 	value = 59;
