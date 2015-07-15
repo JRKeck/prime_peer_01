@@ -52,9 +52,10 @@ for (var i = 0; i < value.length; i++) {
 };
 array.shift();
 array.pop(); //[7","9"]
-var x = 0;
+
+var x = "";
 for (var i = array.length-1; i >= 0; i--) {
-	x += array.pop(array[i]);
+	x += array[i];
 }; //x = "97"
 
 x = parseInt(x); // 97
